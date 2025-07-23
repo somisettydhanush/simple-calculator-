@@ -9,15 +9,15 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to right, #0072ff, #00c6ff); 
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     font-family: 'Roboto', sans-serif;
 }
 
 .calculator {
-    background-color: #ffffff;
+    background-color: #1e1e2f;
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
     width: 350px;
 }
 
@@ -26,13 +26,13 @@ input {
     font-size: 2.2rem;
     padding: 15px;
     border: none;
-    background-color: #f7f7f7;
+    background-color: #2d2d44;
     text-align: right;
     margin-bottom: 20px;
     border-radius: 10px;
-    color: #333;
+    color: #f7f7f7;
     font-weight: bold;
-    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .buttons {
@@ -44,13 +44,13 @@ input {
 button {
     font-size: 1.6rem;
     padding: 15px;
-    background-color: #eef1f7;
+    background-color: #3c3c54;
     border: none;
     border-radius: 12px;
     cursor: pointer;
     transition: transform 0.2s, background-color 0.3s;
-    color: #444;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #f7fafc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 button:active {
@@ -58,41 +58,41 @@ button:active {
 }
 
 button:nth-child(-n+4) {
-    background-color: #ffd166; 
-    color: #333;
+    background-color: #f6ad55; 
+    color: #1a202c;
     font-weight: bold;
 }
 
 button:nth-child(-n+4):hover {
-    background-color: #ffaa00; 
+    background-color: #ed8936; 
 }
 
-
 .clear {
-    background-color: #f55c47; 
+    background-color: #e53e3e; 
     color: white;
     font-weight: bold;
 }
 
 .clear:hover {
-    background-color: #d43d2f; 
+    background-color: #c53030; 
 }
 
 .equal {
-    background-color: #06d6a0; 
+    background-color: #38a169; 
     font-weight: bold;
     grid-column: span 2; 
+    color: white;
 }
 
 .equal:hover {
-    background-color: #04a67e; 
+    background-color: #2f855a; 
 }
 
 button:not(.clear):not(.equal):not(:nth-child(-n+4)) {
-    background-color: #bbdefb; 
-    color: #000;
+    background-color: #4a5568; 
+    color: #f7fafc;
 }
 
 button:not(.clear):not(.equal):not(:nth-child(-n+4)):hover {
-    background-color: #90caf9; 
+    background-color: #718096; 
 }
